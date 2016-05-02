@@ -12,9 +12,12 @@
 		toolbar: new sap.ui.commons.Toolbar({items: [ 
 		new sap.ui.commons.Button({text: "Add Country", press:openFirstDialog})
 	]})});
-  oTable.addColumn(new sap.ui.table.Column({ label: "Id", template: "ID" }));
-  oTable.addColumn(new sap.ui.table.Column({ label: "Country Name", template: "name" }));
-  oTable.setModel(oModel); oTable.bindRows("/vj_euro"); oTable.placeAt("content"); 
+ // oTable.addColumn(new sap.ui.table.Column({ label: "Id", template: "ID" }));
+ // oTable.addColumn(new sap.ui.table.Column({ label: "Country Name", template: "name" }));
+ // oTable.setModel(oModel); oTable.bindRows("/vj_euro"); oTable.placeAt("content"); 
+ oTable.addColumn(new sap.ui.table.Column({ label: "Country Name", template: "name" }));
+ oTable.setModel(oModel); oTable.bindRows("/euro"); oTable.placeAt("content");
+
 </script>
 
 </head>
