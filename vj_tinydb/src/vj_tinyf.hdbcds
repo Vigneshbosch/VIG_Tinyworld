@@ -1,0 +1,14 @@
+namespace VIG_Tinyworld.vj_tinydb;
+
+context vj_tinyf{
+ 
+entity vj_world{
+ key continent : String(100);
+};
+
+entity vj_country{
+ key name : String(100);
+part_of : Association[0..1] to vj_world;
+};
+
+};   

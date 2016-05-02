@@ -1,0 +1,3 @@
+service { 
+ "VIG_Tinyworld.vj_tinydb::vj_myview" as "vj_euro" keys generate local "ID";
+}

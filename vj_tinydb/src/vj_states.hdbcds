@@ -1,0 +1,18 @@
+namespace VIG_Tinyworld.vj_tinydb;
+
+context vj_states{
+ 
+entity vj_states{
+ key state : String(100);
+};
+
+entity vj_district{
+ key district : String(50);
+part_of : Association[0..1] to vj_states;
+};
+
+entity vj_region{
+ key region : String(50);
+part_of_rj : Association[0..1] to vj_district;
+};
+};

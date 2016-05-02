@@ -1,0 +1,41 @@
+--- 
+ID: VIG_Tinyworld
+_schema-version: "2.0.0"
+modules: 
+  - 
+    name: vj_tinydb
+    path: vj_tinydb
+    requires: 
+      - 
+        name: hdi-container
+    type: hdb
+  - 
+    name: vj_tinyjs
+    path: vj_tinyjs
+    provides: 
+      - 
+        name: vj_tinyjs_api
+        properties: 
+          service_url: "${default-url}"
+    requires: 
+      - 
+        name: vj_tinydb
+      - 
+        name: hdi-container
+    type: nodejs
+  - 
+    name: vj_tinyui
+    path: vj_tinyui
+    requires: 
+      - 
+        group: destinations
+        name: vj_tinyjs_api
+        properties: 
+          name: vj_tinyjs_be
+          url: "~{service_url}"
+    type: html5
+resources: 
+  - 
+    name: hdi-container
+    type: com.sap.xs.hdi-container
+version: "0.0.1"

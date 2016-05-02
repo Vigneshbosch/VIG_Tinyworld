@@ -1,0 +1,9 @@
+{
+	"name": "vj_tinyui-approuter",
+	"dependencies": {
+		"approuter": "1.6.2"
+	},
+	"scripts": {
+		"start": "node node_modules/approuter/approuter.js"
+	}
+}

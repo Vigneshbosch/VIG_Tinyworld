@@ -1,0 +1,8 @@
+{
+	"welcomeFile": "index.html",
+	"authenticationMethod": "none",
+	"routes": [{
+		"source": "^/vj_euro.xsodata/.*$",
+		"destination": "vj_tinyjs_be"
+	}]
+}
