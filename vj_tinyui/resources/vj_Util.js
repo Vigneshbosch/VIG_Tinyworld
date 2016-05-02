@@ -33,7 +33,7 @@ function openFirstDialog() {
             
             $.ajax({
                type: "POST",
-               url: "country/country.xsjs",
+               url: "country/vj_country.xsjs",
                contentType: "application/json",
                data: insertdata,
                dataType: "json",
