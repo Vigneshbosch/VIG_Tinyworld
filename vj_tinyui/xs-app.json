@@ -6,6 +6,6 @@
 		"destination": "vj_tinyjs_be"
 	}, {
 		"source": ".*\\.xsjs",
-		"destination": "tinyjs_be"
+		"destination": "vj_tinyjs_be"
 	}]
 }
